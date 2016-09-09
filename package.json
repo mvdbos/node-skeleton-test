@@ -1,16 +1,37 @@
 {
-  "name": "docker_web_app",
-  "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "First Last <first.last@example.com>",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
+  "name": "skeleton-test",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mvdbos/node-skeleton-test",
+  "author": {
+    "name": "Matthijs van den Bos",
+    "email": "matthijs@vandenbos.org"
   },
-  "dependencies": {
-    "express": "^4.13.3"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mvdbos/node-skeleton-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvdbos/node-skeleton-test/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mvdbos/node-skeleton-test/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/skeleton-test",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
   },
   "devDependencies": {
-    "nodemon": "^1.10.2"
-  }
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
 }
